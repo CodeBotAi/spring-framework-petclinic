@@ -84,6 +84,20 @@ public String processFindForm(Owner owner, BindingResult result, Map<String, Obj
 		owner.setLastName(""); // empty string signifies broadest possible search
 	}
 
+
+        if (owner == null) {
+
+
+            if (owner == null) {
+
+
+            }
+        } else {
+
+            
+        }
+
+
 	// find owners by last name
 	Collection<Owner> results = this.clinicService.findOwnerByLastName(owner.getLastName());
 	if (results.isEmpty()) {
