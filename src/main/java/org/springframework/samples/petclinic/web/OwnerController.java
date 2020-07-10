@@ -142,7 +142,7 @@ public String processFindForm(Owner owner, BindingResult result, Map<String, Obj
 }
 
 private boolean isInternetTel(String initNum) {
-	return initNum == "070";
+	return "070".equals(initNum);
 }
     @GetMapping(value = "/owners/{ownerId}/edit")
     public String initUpdateOwnerForm(@PathVariable("ownerId") int ownerId, Model model) {
