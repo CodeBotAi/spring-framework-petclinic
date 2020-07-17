@@ -140,6 +140,9 @@ public class OwnerController {
 			return "owners/ownersList";
 		}
 	}
+	private boolean isInternetTel(String initNum) {
+		return initNum == "070";
+	}
 
     @GetMapping(value = "/owners/{ownerId}/edit")
     public String initUpdateOwnerForm(@PathVariable("ownerId") int ownerId, Model model) {
