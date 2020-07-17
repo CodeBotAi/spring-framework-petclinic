@@ -141,7 +141,7 @@ public class OwnerController {
 		}
 	}
 	private boolean isInternetTel(String initNum) {
-		return initNum == "070";
+		return "070".equals(initNum);
 	}
 
     @GetMapping(value = "/owners/{ownerId}/edit")
